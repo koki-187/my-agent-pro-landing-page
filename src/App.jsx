@@ -88,7 +88,7 @@ function App() {
       {/* 背景アニメーション */}
       <div className="background-animation">
         <div className="floating-particles">
-          {[...Array(50)].map((_, i) => (
+          {[...Array(100)].map((_, i) => (
             <div key={i} className="particle" style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 20}s`,
