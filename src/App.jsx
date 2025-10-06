@@ -85,27 +85,19 @@ function App() {
         }}
       />
       
-      {/* 背景アニメーション */}
-      <div className="background-animation">
-        <div className="floating-particles">
-          {[...Array(100)].map((_, i) => (
-            <div key={i} className="particle" style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 20}s`,
-              animationDuration: `${15 + Math.random() * 10}s`
-            }} />
-          ))}
-        </div>
-        <div className="grid-overlay parallax" data-speed="20" />
-        <div className="gradient-orbs">
-          <div className="orb orb-1" />
-          <div className="orb orb-2" />
-          <div className="orb orb-3" />
-        </div>
-      </div>
-
-      {/* ヘッダー */}
-      <header className="header glass-morphism">
+      {/* ビデオ背景 */}
+      <div className="video-background">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="background-video"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+        <div className="video-overlay" />
+      </div>    <header className="header glass-morphism">
         <nav className="nav-container">
           <div className="logo-container">
             <img src="/logo.png" alt="My Agent PRO" className="logo-image" />
