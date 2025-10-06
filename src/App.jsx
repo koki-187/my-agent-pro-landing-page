@@ -291,22 +291,22 @@ function App() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item glass-card">
-              <div className="stat-number counter-animation" data-target="15">0</div>
+              <div className="stat-number counter-animation" data-target="240">0</div>
               <div className="stat-unit">万円</div>
               <div className="stat-label">月間キャッシュフロー増加</div>
             </div>
             <div className="stat-item glass-card">
-              <div className="stat-number counter-animation" data-target="30">0</div>
+              <div className="stat-number counter-animation" data-target="28">0</div>
               <div className="stat-unit">%</div>
               <div className="stat-label">売却益向上</div>
             </div>
             <div className="stat-item glass-card">
-              <div className="stat-number counter-animation" data-target="25">0</div>
+              <div className="stat-number counter-animation" data-target="34">0</div>
               <div className="stat-unit">%</div>
               <div className="stat-label">相続税負担軽減</div>
             </div>
             <div className="stat-item glass-card">
-              <div className="stat-number counter-animation" data-target="40">0</div>
+              <div className="stat-number counter-animation" data-target="50">0</div>
               <div className="stat-unit">%</div>
               <div className="stat-label">減少<br />不動産管理に関する工数</div>
             </div>
