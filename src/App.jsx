@@ -516,15 +516,6 @@ function App() {
           <div className="contact-content">
             <div className="contact-info">
               <div className="contact-method">
-                <div className="contact-icon">📞</div>
-                <div className="contact-details">
-                  <h3>電話</h3>
-                  <p>平日 9:00-18:00</p>
-                  <a href="tel:03-1234-5678" className="contact-link">03-1234-5678</a>
-                </div>
-              </div>
-              
-              <div className="contact-method">
                 <div className="contact-icon">✉️</div>
                 <div className="contact-details">
                   <h3>メール</h3>
