@@ -108,12 +108,7 @@ function App() {
       <header className="header glass-morphism">
         <nav className="nav-container">
           <div className="logo-container">
-            <div className="logo-icon-professional">
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <span className="logo-text-unified">My Agent PRO</span>
+            <img src="/logo.png" alt="My Agent PRO" className="logo-image" />
           </div>
           <div className="nav-links">
             <a href="#services" className="nav-link hover-glow">サービス</a>
@@ -139,76 +134,78 @@ function App() {
           <div className="hud-overlay parallax" data-speed="15" />
         </div>
         
-        <div className="hero-content">
-          <div className="hero-badge floating-animation">
-            <div className="badge-icon-professional">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
+        <div className="hero-main-container">
+          <div className="hero-content">
+            <div className="hero-badge floating-animation">
+              <div className="badge-icon-professional">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <span className="badge-text-unified">PRO</span>
             </div>
-            <span className="badge-text-unified">PRO</span>
+            
+            <h1 className="hero-title text-glow">
+              次世代の不動産エージェントサービス<br />
+              <span className="gradient-text-unified">My Agent PRO</span>
+            </h1>
+            
+            <p className="hero-subtitle fade-in-up">
+              あなたの専属のエージェントとして不動産のプロを<br />
+              <span className="highlight-text">"中立"ではなく、"あなたの味方"</span>である専門家としてサポート
+            </p>
+            
+            <div className="hero-buttons">
+              <button className="cta-button cta-primary hover-lift">
+                💬 無料相談を開始
+              </button>
+              <button className="cta-button cta-secondary hover-lift">
+                → サービス詳細
+              </button>
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSep8J08e1lQLqB5iymmmy25XRyxvRMfXS5x2iBb8RYYOMRmlA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button cta-accent hover-lift"
+              >
+                📝 申し込みフォーム
+              </a>
+            </div>
           </div>
           
-          <h1 className="hero-title text-glow">
-            次世代の不動産エージェントサービス<br />
-            <span className="gradient-text-unified">My Agent PRO</span>
-          </h1>
-          
-          <p className="hero-subtitle fade-in-up">
-            あなたの専属のエージェントとして不動産のプロを<br />
-            <span className="highlight-text">"中立"ではなく、"あなたの味方"</span>である専門家としてサポート
-          </p>
-          
-          <div className="hero-buttons">
-            <button className="cta-button cta-primary hover-lift">
-              💬 無料相談を開始
-            </button>
-            <button className="cta-button cta-secondary hover-lift">
-              → サービス詳細
-            </button>
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSep8J08e1lQLqB5iymmmy25XRyxvRMfXS5x2iBb8RYYOMRmlA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button cta-accent hover-lift"
-            >
-              📝 申し込みフォーム
-            </a>
-          </div>
-        </div>
-        
-        <div className="feature-icons">
-          <div className="feature-icon glass-card hover-tilt">
-            <div className="icon-professional ai-icon">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-              </svg>
+          <div className="feature-icons">
+            <div className="feature-icon glass-card hover-tilt">
+              <div className="icon-professional ai-icon">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <span>AI<br />搭載</span>
             </div>
-            <span>AI<br />搭載</span>
-          </div>
-          <div className="feature-icon glass-card hover-tilt">
-            <div className="icon-professional support-icon">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-              </svg>
+            <div className="feature-icon glass-card hover-tilt">
+              <div className="icon-professional support-icon">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <span>24/7<br />サポート</span>
             </div>
-            <span>24/7<br />サポート</span>
-          </div>
-          <div className="feature-icon glass-card hover-tilt">
-            <div className="icon-professional line-icon">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
+            <div className="feature-icon glass-card hover-tilt">
+              <div className="icon-professional line-icon">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <span>LINE<br />連携</span>
             </div>
-            <span>LINE<br />連携</span>
-          </div>
-          <div className="feature-icon glass-card hover-tilt">
-            <div className="icon-professional agent-icon">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="feature-icon glass-card hover-tilt">
+              <div className="icon-professional agent-icon">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <span>専属<br />エージェント</span>
             </div>
-            <span>専属<br />エージェント</span>
           </div>
         </div>
       </section>
@@ -513,21 +510,8 @@ function App() {
           <h2 className="section-title gradient-text">お問い合わせ</h2>
           <p className="section-subtitle">ご質問やご相談がございましたら、お気軽にお問い合わせください</p>
           
-          <div className="contact-content">
-            <div className="contact-info">
-              <div className="contact-method">
-                <div className="contact-icon">✉️</div>
-                <div className="contact-details">
-                  <h3>メール</h3>
-                  <p>24時間受付</p>
-                  <a href="mailto:info@my-agent.work" className="contact-link">info@my-agent.work</a>
-                </div>
-              </div>
-              
-              <p className="contact-note">専門スタッフがお待ちしております</p>
-            </div>
-            
-            <div className="contact-form-container">
+          <div className="contact-content-balanced">
+            <div className="contact-form-main">
               <h3 className="form-title">お問い合わせフォーム</h3>
               <p className="form-subtitle">以下のフォームにご記入ください</p>
               
@@ -612,6 +596,16 @@ function App() {
                 )}
               </form>
             </div>
+            
+            <div className="contact-info-side">
+              <div className="contact-method-card glass-card">
+                <div className="contact-icon-large">✉️</div>
+                <h3>メール</h3>
+                <p>24時間受付</p>
+                <a href="mailto:info@my-agent.work" className="contact-link-styled">info@my-agent.work</a>
+              </div>
+              <p className="contact-note">専門スタッフがお待ちしております</p>
+            </div>
           </div>
         </div>
       </section>
@@ -621,12 +615,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-logo">
-              <div className="logo-icon-professional">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span className="logo-text-unified">My Agent PRO</span>
+              <img src="/logo.png" alt="My Agent PRO" className="logo-image-footer" />
             </div>
             
             <div className="footer-links">
